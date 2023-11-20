@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../resources/style.css">
+</head>
+<body>
+    <div id="container">
+        <h2 id="title">Sign in</h2>
+        <div id="fail" hidden></div>
+        <div id="success" hidden></div>
+        <div id="inputContainer">
+            <input type="text" class="input" id="mailInput" placeholder="Email">
+            <input type="text" class="input" id="passInput" placeholder="Password">
+            <input type="text" class="input" id="confirmInput" placeholder="Confirm Password">
+        </div>
+        <button id="submitBtn" onclick="signIn()">Submit</button>
+        <p id="pgSwitch">Click <a href="../index.html">here</a> to log in.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

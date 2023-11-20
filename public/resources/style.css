@@ -1,0 +1,82 @@
+
+body {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: Arial;
+}
+
+#container {
+    position: absolute;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 15px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#title {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#fail {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(58, 0, 0);
+    border: 2px solid red;
+    border-radius: 10px;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -150%);
+}
+
+#success {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(26, 26, 124);
+    border: 2px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -150%);
+}
+
+#inputContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -140%);
+}
+
+.input {
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgb(30, 30, 30);
+    color: white;
+    background-color: rgb(30, 30, 30);
+
+}
+
+#submitBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -15%);
+}
+
+#noAcc {
+    position: absolute;
+    top: 75%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
