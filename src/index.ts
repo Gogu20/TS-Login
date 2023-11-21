@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const signUpBtn = document.getElementById("signUpBtn");
     const logInBtn = document.getElementById("logInBtn");
     const failBox = document.getElementById("fail");
+    const succBox = document.getElementById("success");
     const users = JSON.parse(sessionStorage.getItem("usersData")) || [];
     console.log(users);
 
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function signUp(): boolean {
         failBox.style.display = "none";
+        succBox.style.display = "none";
 
         const mail = (document.getElementById("mailInput") as HTMLInputElement).value;
         const pass = (document.getElementById("passInput") as HTMLInputElement).value;
@@ -30,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
         users.push(user);
         sessionStorage.setItem("usersData", JSON.stringify(users));
 
-        const succBox = document.getElementById("success");
         succBox.style.display = "block";
         succBox.innerHTML = "<p>Account created successfully</p>";
 
