@@ -67,14 +67,14 @@ body {
 
 }
 
-#submitBtn {
+.submitBtn {
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -15%);
 }
 
-#noAcc {
+#pgSwitch {
     position: absolute;
     top: 75%;
     left: 50%; 

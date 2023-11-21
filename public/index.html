@@ -9,14 +9,14 @@
 <body>
     <div id="container">
         <h2 id="title">Log in</h2>
+        <div id="fail" style="display: none;"></div>
         <div id="inputContainer">
-            <input type="text" class="input" id="mailInput" placeholder="Email">
-            <input type="text" class="input" id="passInput" placeholder="Password">
-            <p></p> <!--Lowers the submit button, too lazy to fix the css-->
+            <input type="email" class="input" id="mailInput" placeholder="Email">
+            <input type="password" class="input" id="passInput" placeholder="Password">
         </div>
-        <button id="submitBtn" onclick="logIn()">Submit</button>
+        <button id='logInBtn' class="submitBtn">Submit</button>
         <p id="pgSwitch">Click <a href="pages/auth.html">here</a> to sign in.</p>
     </div>
-    <script src="script.js"></script>
+    <script src="resources/dist/index.js"></script>
 </body>
 </html>
